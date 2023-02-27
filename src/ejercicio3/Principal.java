@@ -1,7 +1,17 @@
 package ejercicio3;
 
 import java.util.ArrayList;
+<<<<<<< HEAD
 import java.util.List;
+=======
+<<<<<<< HEAD
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
+=======
+import java.util.List;
+>>>>>>> c3fe93d2e0d50a0fe6f5a41c1ea14541cd8f096a
+>>>>>>> 3457a02bc4389328046ef41b757f0cd3d413bb9e
 
 import utilidades.Leer;
 
@@ -15,21 +25,48 @@ public class Principal {
 		int opcion,mod,tam;
 		String apellido;
 		float [] notas;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+
+		Alumno a1 = new Alumno("Tomas","del Pino","Coffey");
+		Alumno a2 = new Alumno("Alfonso","Rodríguez","Pezuelo");
+=======
+>>>>>>> 3457a02bc4389328046ef41b757f0cd3d413bb9e
 		
 		Alumno a;
 		Alumno a1 = new Alumno("Tomas","del Pino","Coffey");
 		Alumno a2 = new Alumno("Alonso","Rodríguez","Pezuelo");
+<<<<<<< HEAD
+=======
+>>>>>>> c3fe93d2e0d50a0fe6f5a41c1ea14541cd8f096a
+>>>>>>> 3457a02bc4389328046ef41b757f0cd3d413bb9e
 		Alumno a3 = new Alumno("Martín","Hidalgo","Pérez");
 		Alumno a4 = new Alumno("Ángel","Naranjo","Díaz");
 		Alumno a5 = new Alumno("Cristiano","Ronaldo","Pereira");
 		Secretaria s = new Secretaria();
 		
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+		Set<Alumno> setAlumnos = new HashSet<Alumno>();
+		setAlumnos.add(a1);
+		setAlumnos.add(a2);
+		setAlumnos.add(a3);
+		setAlumnos.add(a4);
+		setAlumnos.add(a5);
+=======
+>>>>>>> 3457a02bc4389328046ef41b757f0cd3d413bb9e
 		List<Alumno> listaAlumnos = new ArrayList<Alumno>();
 		listaAlumnos.add(a1);
 		listaAlumnos.add(a2);
 		listaAlumnos.add(a3);
 		listaAlumnos.add(a4);
 		listaAlumnos.add(a5);
+<<<<<<< HEAD
+=======
+>>>>>>> c3fe93d2e0d50a0fe6f5a41c1ea14541cd8f096a
+>>>>>>> 3457a02bc4389328046ef41b757f0cd3d413bb9e
 		
 		do {
 			imprimirMenu();
@@ -41,6 +78,113 @@ public class Principal {
 				break;
 			
 			case 1:
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+				s.imprimirAlumnos(setAlumnos);
+				break;
+				
+//			case 2:
+//				s.imprimirAlumnos(setAlumnos);
+//				System.out.println("Elija el apellido1 del alumno que desea modificar:");
+//				apellido=Leer.dato();
+//				if(s.findByApellido(setAlumnos, apellido) == null) {
+//					System.out.println("No se ha encontrado un alumno con ese apellido.");
+//					System.out.println();
+//				}else {
+//					System.out.println("¿Qué atributo quiere cambiar?");
+//					System.out.println("1. Nombre | 2. Primer Apellido | 3. Tercer apellido");
+//					mod=Leer.datoInt();
+//					s.modificarAlumno(s.findByApellido(setAlumnos, apellido),mod);
+//					System.out.println();
+//				}
+//				break;
+				
+//			case 3:
+//				s.imprimirAlumnos(setAlumnos);
+//				System.out.println("Elija el apellido1 del alumno que desea modificar:");
+//				apellido=Leer.dato();
+//				if(s.findByApellido(setAlumnos, apellido) == null) {
+//					System.out.println("No se ha encontrado un alumno con ese apellido.");
+//					System.out.println();
+//				}else {
+//					setAlumnos.remove(s.findByApellido(setAlumnos, apellido));
+//					System.out.println();
+//				}
+//				break;
+				
+//			case 4:
+//				s.imprimirAlumnos(setAlumnos);
+//				System.out.println("Elija el apellido1 del alumno que desea modificar:");
+//				apellido=Leer.dato();
+//				if(s.findByApellido(setAlumnos, apellido) == null) {
+//					System.out.println("No se ha encontrado un alumno con ese apellido.");
+//					System.out.println();
+//				}else {
+//					System.out.println("¿Cuántas notas quiere introducir para el alumno?");
+//					tam=Leer.datoInt();
+//					
+//					notas=new float[tam];
+//					
+//					System.out.println("Introduzca las notas para el alumno:");
+//					for(int i =0;i<notas.length;i++) {
+//						System.out.println((i+1)+": ");
+//						notas[i]=Leer.datoFloat();
+//					}
+//					
+//					System.out.printf("La media de las notas del alumno es de %.2f \n",s.calcularNotaMedia(notas));
+//					System.out.println();
+//				}
+//				break;
+				
+//			case 5: 
+//				s.imprimirAlumnos(setAlumnos);
+//				System.out.println("Elija el apellido1 del alumno que desea modificar:");
+//				apellido=Leer.dato();
+//				if(s.findByApellido(setAlumnos, apellido) == null) {
+//					System.out.println("No se ha encontrado un alumno con ese apellido.");
+//					System.out.println();
+//				}else {
+//					System.out.println("¿Cuántas notas quiere introducir para el alumno?");
+//					tam=Leer.datoInt();
+//					
+//					notas=new float[tam];
+//					
+//					System.out.println("Introduzca las notas para el alumno:");
+//					for(int i =0;i<notas.length;i++) {
+//						System.out.println((i+1)+": ");
+//						notas[i]=Leer.datoFloat();
+//					}
+//					
+//					System.out.println("El alumno ha suspendido "+s.contarNotasSuspensas(notas)+" exámenes");
+//				}
+//				break;
+				
+//			case 6: 
+//				s.imprimirAlumnos(setAlumnos);
+//				System.out.println("Elija el apellido1 del alumno que desea modificar:");
+//				apellido=Leer.dato();
+//				if(s.findByApellido(setAlumnos, apellido) == null) {
+//					System.out.println("No se ha encontrado un alumno con ese apellido.");
+//					System.out.println();
+//				}else {
+//					System.out.println("¿Cuántas notas quiere introducir para el alumno?");
+//					tam=Leer.datoInt();
+//					
+//					notas=new float[tam];
+//					
+//					System.out.println("Introduzca las notas para el alumno:");
+//					for(int i =0;i<notas.length;i++) {
+//						System.out.println((i+1)+": ");
+//						notas[i]=Leer.datoFloat();
+//					}
+//					
+//					System.out.printf("La media de sólo las notas suspensas del alumno es de %.2f \n",s.calcularMediaNotasSuspensas(notas));
+//					System.out.println(); //hace falta arreglarlo
+//				}
+//				break;
+=======
+>>>>>>> 3457a02bc4389328046ef41b757f0cd3d413bb9e
 				s.imprimirAlumnos(listaAlumnos);
 				break;
 				
@@ -143,6 +287,10 @@ public class Principal {
 					System.out.println(); //hace falta arreglarlo
 				}
 				break;
+<<<<<<< HEAD
+=======
+>>>>>>> c3fe93d2e0d50a0fe6f5a41c1ea14541cd8f096a
+>>>>>>> 3457a02bc4389328046ef41b757f0cd3d413bb9e
 				
 				default:
 					System.out.println("Elija una opción correcta.");

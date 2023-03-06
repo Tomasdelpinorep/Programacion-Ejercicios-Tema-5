@@ -48,8 +48,8 @@ public class Persona implements Comparable <Persona>{
 
 	@Override
 	public int compareTo(Persona p) {
-		return this.nombre.toLowerCase().compareTo(p.getNombre().toLowerCase());
+		return this.nombre.toLowerCase().compareTo(p.getNombre().toLowerCase()); 
 	}
 	
-	
+	//DUDA: ¿Cómo es que se llama compareTo a sí mismo? - Linea 51
 }
